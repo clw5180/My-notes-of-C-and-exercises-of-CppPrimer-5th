@@ -6,11 +6,11 @@
 //
 //int main()
 //{
-//	vector<string> vec;
-//	string s;
-//	while (cin >> s)
+//	vector<string> strVec;
+//	string str;
+//	while (cin >> str)
 //	{
-//		vec.push_back(s);
+//		strVec.push_back(str);
 //	}
 //	return 0;
 //}

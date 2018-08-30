@@ -5,11 +5,11 @@
 //
 //int main()
 //{
-//	vector<int> vec;
+//	vector<int> iVec;
 //	int i;
 //	while (cin >> i)
 //	{
-//		vec.push_back(i);
+//		iVec.push_back(i);
 //	}
 //	return 0;
 //}

@@ -6,25 +6,23 @@
 //
 //int main()
 //{
-//	vector<int> vec;
+//	vector<int> iVec;
 //	int i;
 //	cout << "请输入两个或以上的整数，以计算相邻整数之和: ";
 //	while (cin >> i)
 //	{
-//		vec.push_back(i);
+//		iVec.push_back(i);
 //	}
-//	switch (vec.size())
+//
+//	if (iVec.size() < 2)
 //	{
-//	case 0:
-//		cout << "输入有误，请输入至少一个整数！" << endl;
-//		break;
-//	case 1:
-//		cout << "仅输入了一个整数" << vec[0] << "，无法计算相邻整数之和！" << endl;
-//		break;
-//	default:
-//		for (decltype(vec.size())i = 0; i < vec.size() - 1; ++i)
-//			cout << vec[i] + vec[i + 1] << endl;
-//		break;
+//		cout << "输入有误，请输入至少两个整数！" << endl;
+//		return -1;
+//	}
+//	else
+//	{
+//		for (decltype(iVec.size())i = 0; i < iVec.size() - 1; ++i)
+//			cout << iVec[i] + iVec[i + 1] << endl;
 //	}
 //	return 0;
 //}

@@ -6,22 +6,22 @@
 //
 //int main()
 //{
-//	vector<string> vec;
-//	string s;
-//	while (cin >> s)
+//	vector<string> strVec;
+//	string str;
+//	while (cin >> str)
 //	{
-//		vec.push_back(s);
+//		strVec.push_back(str);
 //	}
 //
 //	//小写转大写
-//	for (auto &str : vec)
+//	for (auto &str : strVec)
 //		for (auto &c : str)
 //			c = toupper(c);
 //
 //	//输出
-//	for (decltype(vec.size()) i = 0; i < vec.size(); ++i)
+//	for (decltype(strVec.size()) i = 0; i < strVec.size(); ++i)
 //	{
-//		cout << vec[i] << endl;
+//		cout << strVec[i] << endl;
 //	}
 //
 //	return 0;
