@@ -113,6 +113,14 @@
     <ClCompile Include="Practice 6.10.cpp" />
     <ClCompile Include="Practice 6.12.cpp" />
     <ClCompile Include="Practice 6.17.cpp" />
+    <ClCompile Include="Practice 6.21.cpp" />
+    <ClCompile Include="Practice 6.22.cpp" />
+    <ClCompile Include="Practice 6.23.cpp" />
+    <ClCompile Include="Practice 6.25.cpp" />
+    <ClCompile Include="Practice 6.27.cpp" />
+    <ClCompile Include="Practice 6.33.cpp" />
+    <ClCompile Include="Practice 6.34.cpp" />
+    <ClCompile Include="Practice 6.42.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
