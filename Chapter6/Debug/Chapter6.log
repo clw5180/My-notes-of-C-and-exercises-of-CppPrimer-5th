@@ -1,3 +1,15 @@
-﻿  test.cpp
-  Chapter6.vcxproj -> J:\exercise\Chapter6\Debug\Chapter6.exe
-  Chapter6.vcxproj -> J:\exercise\Chapter6\Debug\Chapter6.pdb (Partial PDB)
+﻿Practice 6.51.obj : warning LNK4204: “F:\exercise\Chapter6\Debug\vc140.pdb”缺少引用模块的调试信息；正在链接对象，如同没有调试信息一样
+Practice 6.47.obj : warning LNK4204: “F:\exercise\Chapter6\Debug\vc140.pdb”缺少引用模块的调试信息；正在链接对象，如同没有调试信息一样
+Practice 6.42.obj : warning LNK4204: “F:\exercise\Chapter6\Debug\vc140.pdb”缺少引用模块的调试信息；正在链接对象，如同没有调试信息一样
+Practice 6.34.obj : warning LNK4204: “F:\exercise\Chapter6\Debug\vc140.pdb”缺少引用模块的调试信息；正在链接对象，如同没有调试信息一样
+Practice 6.33.obj : warning LNK4204: “F:\exercise\Chapter6\Debug\vc140.pdb”缺少引用模块的调试信息；正在链接对象，如同没有调试信息一样
+Practice 6.27.obj : warning LNK4204: “F:\exercise\Chapter6\Debug\vc140.pdb”缺少引用模块的调试信息；正在链接对象，如同没有调试信息一样
+Practice 6.25.obj : warning LNK4204: “F:\exercise\Chapter6\Debug\vc140.pdb”缺少引用模块的调试信息；正在链接对象，如同没有调试信息一样
+Practice 6.23.obj : warning LNK4204: “F:\exercise\Chapter6\Debug\vc140.pdb”缺少引用模块的调试信息；正在链接对象，如同没有调试信息一样
+Practice 6.22.obj : warning LNK4204: “F:\exercise\Chapter6\Debug\vc140.pdb”缺少引用模块的调试信息；正在链接对象，如同没有调试信息一样
+Practice 6.21.obj : warning LNK4204: “F:\exercise\Chapter6\Debug\vc140.pdb”缺少引用模块的调试信息；正在链接对象，如同没有调试信息一样
+Practice 6.17.obj : warning LNK4204: “F:\exercise\Chapter6\Debug\vc140.pdb”缺少引用模块的调试信息；正在链接对象，如同没有调试信息一样
+Practice 6.12.obj : warning LNK4204: “F:\exercise\Chapter6\Debug\vc140.pdb”缺少引用模块的调试信息；正在链接对象，如同没有调试信息一样
+Practice 6.10.obj : warning LNK4204: “F:\exercise\Chapter6\Debug\vc140.pdb”缺少引用模块的调试信息；正在链接对象，如同没有调试信息一样
+  Chapter6.vcxproj -> F:\exercise\Chapter6\Debug\Chapter6.exe
+  Chapter6.vcxproj -> F:\exercise\Chapter6\Debug\Chapter6.pdb (Partial PDB)
