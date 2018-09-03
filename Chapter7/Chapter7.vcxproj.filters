@@ -21,6 +21,12 @@
     <ClInclude Include="Practice 7.11.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Practice 7.26.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Practice 7.27.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Practice 7.11.cpp">
@@ -30,6 +36,15 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Practice 7.13.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Practice 7.26.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Practice 7.27.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Practice 7.27 main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

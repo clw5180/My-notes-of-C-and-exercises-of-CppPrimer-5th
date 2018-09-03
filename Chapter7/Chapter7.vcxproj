@@ -20,12 +20,17 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Practice 7.11.h" />
+    <ClInclude Include="Practice 7.26.h" />
+    <ClInclude Include="Practice 7.27.h" />
     <ClInclude Include="Practice 7.6.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Practice 7.11 main.cpp" />
     <ClCompile Include="Practice 7.11.cpp" />
     <ClCompile Include="Practice 7.13.cpp" />
+    <ClCompile Include="Practice 7.26.cpp" />
+    <ClCompile Include="Practice 7.27 main.cpp" />
+    <ClCompile Include="Practice 7.27.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{D8226CF5-8535-47F7-A158-FBA13B3DF03F}</ProjectGuid>
