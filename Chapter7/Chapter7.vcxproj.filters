@@ -24,7 +24,10 @@
     <ClInclude Include="Practice 7.26.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Practice 7.27.h">
+    <ClInclude Include="Practice 7.32 windowMgr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Practice 7.27 screen.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -41,10 +44,16 @@
     <ClCompile Include="Practice 7.26.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Practice 7.27.cpp">
+    <ClCompile Include="Practice 7.27 main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Practice 7.27 main.cpp">
+    <ClCompile Include="Practice 7.32 windowMgr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Practice 7.27 screen.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Practice 7.43.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
