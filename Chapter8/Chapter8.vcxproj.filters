@@ -18,8 +18,40 @@
     <ClCompile Include="Practice 8.1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Practice 7.11 salesdata.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Practice 8.5.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="Practice 8.4.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Practice 8.6.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Practice 8.7.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Practice 8.8.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Practice 8.9.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Practice 8.10.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Practice 8.11.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Practice 8.13.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Practice 7.11 salesdata.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

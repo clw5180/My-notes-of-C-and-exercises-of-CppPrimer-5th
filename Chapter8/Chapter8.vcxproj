@@ -19,8 +19,20 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Practice 7.11 salesdata.cpp" />
     <ClCompile Include="Practice 8.1.cpp" />
+    <ClCompile Include="Practice 8.10.cpp" />
+    <ClCompile Include="Practice 8.11.cpp" />
+    <ClCompile Include="Practice 8.13.cpp" />
     <ClCompile Include="Practice 8.4.cpp" />
+    <ClCompile Include="Practice 8.5.cpp" />
+    <ClCompile Include="Practice 8.6.cpp" />
+    <ClCompile Include="Practice 8.7.cpp" />
+    <ClCompile Include="Practice 8.8.cpp" />
+    <ClCompile Include="Practice 8.9.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Practice 7.11 salesdata.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{9D14EB27-BA32-4139-8C0D-8BC167D00064}</ProjectGuid>
