@@ -51,5 +51,23 @@
     <ClCompile Include="Practice 9.22.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Practice 9.24.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Practice 9.26.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Practice 9.27.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Practice 9.28%28note%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Practice 9.31%281%29%28note%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Practice 9.31%282%29%28note%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
