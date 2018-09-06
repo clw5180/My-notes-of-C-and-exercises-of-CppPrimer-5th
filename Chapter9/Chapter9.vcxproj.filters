@@ -48,5 +48,8 @@
     <ClCompile Include="Practice 9.16%28note%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Practice 9.22.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
