@@ -27,7 +27,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Practice 7.11 main.cpp" />
-    <ClCompile Include="Practice 7.11.cpp" />
+    <ClCompile Include="Practice 7.11%28note%29.cpp" />
     <ClCompile Include="Practice 7.13.cpp" />
     <ClCompile Include="Practice 7.26.cpp" />
     <ClCompile Include="Practice 7.27 main.cpp" />

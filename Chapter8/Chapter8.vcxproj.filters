@@ -33,9 +33,6 @@
     <ClCompile Include="Practice 8.7.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Practice 8.8.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="Practice 8.9.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -46,6 +43,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Practice 8.13.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Practice 8.8%28note%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

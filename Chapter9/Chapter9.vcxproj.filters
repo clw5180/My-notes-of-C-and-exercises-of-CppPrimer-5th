@@ -36,7 +36,16 @@
     <ClCompile Include="Practice 9.15.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Practice 9.16.cpp">
+    <ClCompile Include="Practice 9.18.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Practice 9.19.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Practice 9.20%28note%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Practice 9.16%28note%29.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
