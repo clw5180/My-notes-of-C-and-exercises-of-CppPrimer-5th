@@ -19,5 +19,13 @@
     总结： 要想真正结束输入，必须在输入完之后回车另起一行，在开头输入ctrl+z并回车才有效。（赵4老师）
 	   按Enter键可以从输入缓冲区取得整行的字符串；（记得之前看书，回车相当于回扫 + /n的效果）
 	
-	
+20180907：Chapter10，Practice 10.13不要写成if-else的形式，直接return一个表达式更简洁。另外有时候可以写成条件运算符return (x?y:z);的形式
+
+	//if (str.length() >= 5)
+	//	return true;
+	//else
+	//	return false;
+
+	//clw note：更好的写法：
+	return str.length() >= 5;
 
