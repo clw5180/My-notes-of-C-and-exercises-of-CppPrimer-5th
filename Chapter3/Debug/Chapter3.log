@@ -1,4 +1,0 @@
-﻿  Practice 3.43.cpp
-j:\exercise\chapter3\practice 3.43.cpp(16): error C2234: “row”: 引用数组是非法的
-j:\exercise\chapter3\practice 3.43.cpp(16): error C2440: “初始化”: 无法从“int [4]”转换为“const int *[4]”
-  j:\exercise\chapter3\practice 3.43.cpp(16): note: 没有使该转换得以执行的上下文
