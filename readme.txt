@@ -1,8 +1,8 @@
-——my answer to the exercise of c++ primer, 5th Edition
+—— my answer to the exercise of c++ primer, 5th Edition 
+           
 
 
-
-——【C++ Primer】C++ Primer 5th 阅读心得记录与困惑
+/*********** 以下是我的 C++ Primer 5th 阅读心得记录与困惑    &&    每日学习简记 ***********/
 
 20180903：Chapter7，后期考虑把写的CScreen和CWindowMgr类结合某个GUI库（学习下vzch的Gaclib？）开发一个写字板？
 
@@ -29,3 +29,8 @@
 	//clw note：更好的写法：
 	return str.length() >= 5;
 
+20180908：主要结合视频和教材看了下豆瓣评分很高的清华大学邓俊辉的《数据结构与算法》第一章；考虑过几天还是结合传智播客王保明的数据结构、《算法》 4th来看。
+
+20180909：继续看传智播客C++视频，复习了VPTR、虚函数表VTABLE、虚析构函数、抽象类等概念；
+                  看了函数指针和回调相关知识点 —— 针对该知识点学习并积累了传智播客的socketclient财富库，上传至itcast；调试的时候遇到了一个缺少 msvcr100d.dll的坑，这是由于源代码是在VS2010下编译的。这里我直接从网上下了这个dll放在debug文件夹下即可。
+	  另外，发现要想在调试时F11进入socketclient的源码，需要在 项目属性-常规-输出目录和中间目录选项，配置路径到测试dll的项目下。
