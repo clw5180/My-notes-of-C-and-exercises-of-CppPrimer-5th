@@ -117,6 +117,8 @@
     <ClCompile Include="main01.cpp" />
     <ClCompile Include="MyList.cpp" />
     <ClCompile Include="MyStack.cpp" />
+    <ClCompile Include="main02.cpp" />
+    <ClCompile Include="main03.cpp" />
     <ClCompile Include="test.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

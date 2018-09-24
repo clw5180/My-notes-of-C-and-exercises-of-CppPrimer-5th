@@ -49,8 +49,6 @@ MyList::~MyList()
 //
 //}
 
-
-
 int  MyList::CreateList(stChain* &pHead)
 {
 	if (pHead != NULL)
@@ -58,7 +56,8 @@ int  MyList::CreateList(stChain* &pHead)
 	else
 		pHead = (stChain*)malloc(sizeof(stChain));
 
-	stChain *pLast, *pCurr;
+	stChain *pCurr;
+	pCurr = pHead;
 	int data = 0;
 	printf("Please input a number:");
 	scanf_s("%d", &data);
@@ -67,11 +66,8 @@ int  MyList::CreateList(stChain* &pHead)
 		printf("No Input!\n");
 		return -2;
 	}
-	
 	pHead->value = data;
-	pLast = pHead;
-	pCurr = pHead;
-
+	
 	while (1)
 	{
 		printf("Please input a number:");
@@ -82,10 +78,9 @@ int  MyList::CreateList(stChain* &pHead)
 			printf("End Input.\n");
 			return 0;
 		}
-		pCurr = (stChain*)malloc(sizeof(stChain));
-		pCurr->value = data;
-		pLast->next = pCurr;
-		pLast = pCurr;
+		pCurr->next = (stChain*)malloc(sizeof(stChain));
+		pCurr->next->value = data;
+		pCurr = pCurr->next;
 	}
 }
 
@@ -104,7 +99,7 @@ int MyList::ShowList(stChain* pHead)
 }
 
 
-int MyList::AddList(int value)
+int MyList::AddList(int value)  //首先必须保证有序
 {
 	if (m_pHead == NULL)
 		return -1;

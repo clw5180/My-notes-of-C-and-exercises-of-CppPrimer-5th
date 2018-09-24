@@ -32,6 +32,12 @@
     <ClCompile Include="MyList.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="main02.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main03.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
