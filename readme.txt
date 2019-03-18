@@ -1,1 +1,1 @@
-my answer to the exercise of c++ primer, 5th Edition
+My answer to the exercise of C++ Primer, 5th Edition
