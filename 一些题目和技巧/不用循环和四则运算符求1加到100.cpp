@@ -2,10 +2,10 @@
 
 using namespace std;
 
-int Add(int a, int b) //clw note:ÊµÏÖ¼Ó·¨¹¦ÄÜ£¬·µ»Øa+b
+int Add(int a, int b) //clw note:å®ç°åŠ æ³•åŠŸèƒ½ï¼Œè¿”å›a+b
 {
-	int c = a^b;     //clw note£º¿ªÊ¼Íü¼ÇÓĞÒì»ò·ûºÅ£¬ÓÃ(a|b) & (~(a&b))´îÁË¸ö°ë¼ÓÆ÷¡£¡£
-	int s = (a&b) << 1; //clw note£ºÈ«1Ê±£¬½øÎ»²ÅÊÇ1£¬Òò´ËÊÇÓëµÄ¹ØÏµ£»ÁíÍâ×¢ÒâÓÉÓÚÊÇ½øÎ»£¬Òò´ËĞèÒª×óÒÆ
+	int c = a^b;     //clw noteï¼šå¼€å§‹å¿˜è®°æœ‰å¼‚æˆ–ç¬¦å·ï¼Œç”¨(a|b) & (~(a&b))æ­äº†ä¸ªåŠåŠ å™¨ã€‚ã€‚
+	int s = (a&b) << 1; //clw noteï¼šå…¨1æ—¶ï¼Œè¿›ä½æ‰æ˜¯1ï¼Œå› æ­¤æ˜¯ä¸çš„å…³ç³»ï¼›å¦å¤–æ³¨æ„ç”±äºæ˜¯è¿›ä½ï¼Œå› æ­¤éœ€è¦å·¦ç§»
 	if (s != 0)
 	{
 		Add(c, s);
@@ -15,6 +15,20 @@ int Add(int a, int b) //clw note:ÊµÏÖ¼Ó·¨¹¦ÄÜ£¬·µ»Øa+b
 		return c;
 	}
 }
+/*
+æ­£è§„å†™æ³•ï¼š
+int Add(int num1, int num2)
+{
+	int s = num1 ^ num2;
+	int c = (num1 & num2) << 1;
+	int result;
+	if (c != 0)
+		result = Add(s, c);
+	else
+		result = s;
+	return result;	
+}
+*/
 
 int Sum(int n)
 {
@@ -25,6 +39,6 @@ int Sum(int n)
 
 int main()
 {
-	cout << Sum(100) << endl;  //clw note£ºn>4500±¬Õ»
+	cout << Sum(100) << endl;  //clw noteï¼šn>4500çˆ†æ ˆ
 	return 0;
 }
