@@ -4,24 +4,74 @@
 
 using namespace std;
 
-//Ïê¼û
+//è¯¦è§
 //https://zhuanlan.zhihu.com/p/31628866
+//æˆ‘çš„æ–¹æ¡ˆï¼Œç¬¬ä¸€ç§å†™æ³•ï¼šä¸‹æ ‡0åˆ°num-1ï¼Œè¿™æ ·ç”¨ä¸‹æ ‡0ä»£è¡¨1ä¸ªå·¥äººï¼Œå†™èµ·æ¥å¤šå‡ è¡Œä»£ç ã€‚
 int getMostGold(int num, vector<int> gold, vector<int> people)
 {
-	vector<int> preResults(num + 1, 0);
-	vector<int> results(num + 1 , 0);
+	vector<int> preResults(num, 0);
+	vector<int> results(num, 0);
 	int GoldSize = gold.size();
 
-	//Ìî³ä±ß½ç¸ñ×ÓµÄÖµ
-	for (int i = 0; i < num + 1; ++i)
+	//å¡«å……è¾¹ç•Œæ ¼å­çš„å€¼
+	for (int i = 0; i < num; ++i)
 	{
-		if (i < people[0]) 
+		if (i < people[0] - 1)  //æ¯”å¦‚people[0]=5ï¼Œi=4ä»£è¡¨5ä¸ªäººçš„æ—¶å€™ï¼Œå› æ­¤è¿™æ—¶å€™åº”è¯¥è¿›else
 			preResults[i] = 0;
 		else
 			preResults[i] = gold[0];
 	}
 
-	//Ìî³äÆäÓà¸ñ×ÓµÄÖµ£¬Íâ²ãÑ­»·ÊÇ½ğ¿óÊıÁ¿£¬ÄÚ²ãÑ­»·ÊÇ¹¤ÈËÊı
+	//å¡«å……å…¶ä½™æ ¼å­çš„å€¼ï¼Œå¤–å±‚å¾ªç¯æ˜¯é‡‘çŸ¿æ•°é‡ï¼Œå†…å±‚å¾ªç¯æ˜¯å·¥äººæ•°
+	for (int i = 1; i < GoldSize; ++i)
+	{
+		for (int j = 0; j < num; ++j)
+		{
+			if (j < people[i] - 1)
+			{
+				results[j] = preResults[j];
+				cout << results[j] << " ";
+			}
+			else
+			{
+				//clw noteï¼šè¦æƒ³æ±‚maxï¼Œå°±éœ€è¦æœ‰ä¸‹æ ‡0ï¼Œæ¯”å¦‚2é‡‘çŸ¿5å·¥äººçš„æ—¶å€™ï¼Œéœ€è¦å¯¹1é‡‘çŸ¿5å·¥äººï¼Œå’Œ1é‡‘çŸ¿0å·¥äºº+2é‡‘çŸ¿5å·¥äººï¼Œæ±‚maxï¼›
+				//è™½ç„¶0å·¥äººä¸å­˜åœ¨ï¼Œä½†æ˜¯ä¸ºäº†ç»Ÿä¸€æ ¼å¼ï¼Œè¿™é‡Œä¸ªäººæ„Ÿè§‰éœ€è¦é¢å¤–å¼•å…¥ä¸€ä¸ªä¸‹æ ‡ä¸º0çš„ç©ºé—´ï¼Œæ–¹ä¾¿ç†è§£å’Œæ ¼å¼ç»Ÿä¸€ã€‚
+				//æˆ–è€…å°±æŒ‰ç…§ä¸‹é¢çš„å†™æ³•ä¹Ÿè¡Œã€‚ã€‚ã€‚
+				if (j - people[i] < 0)
+				{
+					results[j] = max(preResults[j], gold[i]);
+					cout << results[j] << " ";
+				}		
+				else
+				{
+					results[j] = max(preResults[j], preResults[j - people[i]] + gold[i]);
+					cout << results[j] << " ";
+				}
+			}
+		}
+		preResults = results;
+		cout << endl;
+	}
+	return results[num - 1];
+}
+
+//æˆ‘çš„æ–¹æ¡ˆï¼Œç¬¬äºŒç§å†™æ³•ï¼šä¸‹æ ‡0åˆ°numï¼Œé¢å¤–å¤šä¸€ä¸ª0å·¥äººçš„ç©ºé—´ï¼Œè¿™æ ·æ–¹ä¾¿ä¸‹æ ‡è¡¨ç¤ºï¼Œç”¨1ä»£è¡¨1ä¸ªå·¥äºº
+int getMostGold2(int num, vector<int> gold, vector<int> people)
+{
+	vector<int> preResults(num + 1, 0);
+	vector<int> results(num + 1, 0);
+	int GoldSize = gold.size();
+
+	//å¡«å……è¾¹ç•Œæ ¼å­çš„å€¼
+	for (int i = 0; i < num + 1; ++i)
+	{
+		if (i < people[0])
+			preResults[i] = 0;
+		else
+			preResults[i] = gold[0];
+	}
+
+	//å¡«å……å…¶ä½™æ ¼å­çš„å€¼ï¼Œå¤–å±‚å¾ªç¯æ˜¯é‡‘çŸ¿æ•°é‡ï¼Œå†…å±‚å¾ªç¯æ˜¯å·¥äººæ•°
 	for (int i = 1; i < GoldSize; ++i)
 	{
 		for (int j = 0; j < num + 1; ++j)
@@ -33,11 +83,9 @@ int getMostGold(int num, vector<int> gold, vector<int> people)
 			}
 			else
 			{
-				//clw note£ºÒªÏëÇómax£¬¾ÍĞèÒªÓĞÏÂ±ê0£¬±ÈÈç2½ğ¿ó5¹¤ÈËµÄÊ±ºò£¬ĞèÒª¶Ô1½ğ¿ó5¹¤ÈË£¬ºÍ1½ğ¿ó0¹¤ÈË+2½ğ¿ó5¹¤ÈË£¬Çómax£»
-				//ËäÈ»0¹¤ÈË²»´æÔÚ£¬µ«ÊÇÎªÁËÍ³Ò»¸ñÊ½£¬ÕâÀï¸öÈË¸Ğ¾õĞèÒª¶îÍâÒıÈëÒ»¸öÏÂ±êÎª0µÄ¿Õ¼ä£¬·½±ãÀí½âºÍ¸ñÊ½Í³Ò»¡£
-				results[j] = max(preResults[j], preResults[j - people[i]] + gold[i]); 
+				results[j] = max(preResults[j], preResults[j - people[i]] + gold[i]);
 				cout << results[j] << " ";
-			}		
+			}
 		}
 		preResults = results;
 		cout << endl;
@@ -45,11 +93,14 @@ int getMostGold(int num, vector<int> gold, vector<int> people)
 	return results[num];
 }
 
+
+
 int main()
 {
 	vector<int> gold = { 400, 500, 200, 300, 350 };
-	vector<int> people = { 5, 5, 3, 4, 3};
-	int num = 10;
-	cout << getMostGold(num, gold, people) << endl;
+	vector<int> people = { 5, 5, 3, 4, 3 };
+	int num = 10;  //å‡è®¾ç”¨10ä¸ªå·¥äºº
+	cout << "max gold is: " << getMostGold(num, gold, people) << endl;
+	cout << "max gold is: " << getMostGold2(num, gold, people) << endl;
 	return 0;
 }
