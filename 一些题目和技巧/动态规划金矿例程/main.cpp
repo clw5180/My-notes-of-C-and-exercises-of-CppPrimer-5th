@@ -58,7 +58,7 @@ int getMostGold(int num, vector<int> gold, vector<int> people)
 //我的方案，第二种写法：下标0到num，额外多一个0工人的空间，这样方便下标表示，用1代表1个工人
 int getMostGold2(int num, vector<int> gold, vector<int> people)
 {
-	vector<int> preResults(num + 1, 0);
+	vector<int> preResults(num + 1, 0);  //因为F(x,0)也要用到,所以表格应该有num + 1列
 	vector<int> results(num + 1, 0);
 	int GoldSize = gold.size();
 
